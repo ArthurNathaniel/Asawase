@@ -4,6 +4,23 @@ include 'db.php';
 // Initialize $imagePaths array
 $imagePaths = [];
 
+// Check if there are already uploaded images for editing
+if(isset($_GET['id'])) {
+    $blog_id = $_GET['id'];
+
+    $sql = "SELECT images FROM blogs WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $blog_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        $imagePaths = json_decode($row['images'], true);
+    }
+    $stmt->close();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST['title'];
     $date = $_POST['date'];
@@ -29,15 +46,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
         echo "New blog added successfully";
-        // Clear uploaded images after successful submission
-        $imagePaths = [];
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     $stmt->close();
-    $conn->close();
 }
+
+$conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <textarea id="content" name="content" rows="5" required></textarea><br><br>
         <input type="submit" value="Add Blog">
     </form>
-    <h2>Uploaded Images:</h2>
+    <!-- <h2>Uploaded Images:</h2>
     <div class="image-container">
         <?php
         if (!empty($imagePaths)) {
@@ -81,6 +97,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
         ?>
-    </div>
+    </div> -->
 </body>
 </html>

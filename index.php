@@ -162,7 +162,7 @@
                 <div class="swiper-wrapper">
                     <?php
                     include 'db.php';
-                    $sql = "SELECT id, title, date, author, images FROM blogs"; // Select image column
+                    $sql = "SELECT id, title, date, author, images FROM blogs ORDER BY id DESC"; // Select image column
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -174,7 +174,7 @@
                             echo '<div class="blog_card">';
                             echo '<div class="blog_img"><img src="' . $image . '" alt=""></div>'; // Use $image instead of $row['image']
                             echo '<div class="blog_info">';
-                            echo '<h4>' . $row['title'] . '</h4>';
+                            echo '<p>' . $row['title'] . '</p>';
                             echo '<p><i class="fa-solid fa-calendar-days"></i> ' . $row['date'] . '</p>';
                             echo '<p><i class="fa-solid fa-user"></i> ' . $row['author'] . '</p>';
                             echo '</div></div></a></div>';
@@ -190,13 +190,7 @@
         </div>
     </div>
 </section>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<?php include 'footer.php'; ?>
     <script src='./js/swiper.js'></script>
     <script src='./js/navbar.js'></script>
 
