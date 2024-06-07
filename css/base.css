@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+ overflow-x: hidden;
+}
+
+
+
+.header_all {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #878838;
+    padding: 0 7%;
+    padding-block: 5px;
+    padding-top: 10px;
+}
+
+.motto span {
+    color:  #878838;
+    padding-right: 15px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.motto p {
+    color: #fff;
+}
+
+.navbar_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 7%;
+    position: sticky;
+    top: 0;
+    z-index: 454;
+    padding-block: 5px;
+    width: 100%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav_links a {
+    padding: 15px;
+    color: #000;
+}
+
+.nav_links a:hover {
+    color:  #878838;
+}
+
+.mobile a {
+    color: #000;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #878838;
+    min-width: 200px;
+    z-index: 701;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.donate{
+    display: flex;
+    justify-content: flex-end;
+}
+.donate button{
+  padding: 15px 45px;
+}
+
+.social_media a {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background-color:  #878838;
+    color: #fff;
+}
+
+
+.whatsapp_box p span{
+   padding-left: 15px;
+}
+.whatsapp_box p{
+    z-index: 888;
+       padding: 10px 45px;
+     background-color:#fff;
+        right: 90px;
+        position: fixed;
+        bottom: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.mail{
+     z-index: 888;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 30px;
+    position: fixed;
+    bottom: 20px;
+    background-color:  #878838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.maill {
+    z-index: 888;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 30px;
+    position: fixed;
+    bottom: 80px;
+    background-color:  #878838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.mail a {
+    color: #fff;
+
+}
+.maill a{
+    color: #fff;
+}
+#toggleButton {
+    display: none;
+    background-color:  #878838;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+.about_bg {
+    height: 300px;
+    background-color:  #878838;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_bg h3 {
+    color: #000;
+    text-transform: uppercase;
+}
+
+.about_bg h1 {
+    color: #fff;
+    font-size: 50px;
+}
+.footer_all{
+    background-color:  #878838;
+    padding: 0 7%;
+    padding-block: 50px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links{
+    width: 95%;
+}
+.links h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.links a{
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+    color: #fff;
+    border-bottom: 2px solid;
+}
+.links h2{
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+ .social_mediaa  {
+     display: flex !important;
+     gap: 20px;
+     background-color: transparent;
+     margin-top: 20px;
+ }
+
+ .social_mediaa a{
+    color: #fff;
+    font-size: 25px;
+ }
+ .last{
+    padding: 0 7%;
+    padding-block: 20px;
+    text-align: center;
+ }
+ .last a{
+    color:  #878838;
+ }
+@media only screen and (max-width: 1210px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding-block: 20px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .header_all {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+
+    #toggleButton {
+        display: block;
+        background-color:  #878838;
+        background-color: transparent;
+        border: none;
+        padding: 15px;
+        color: #fff;
+      position: absolute;
+      right: 0;
+    }
+
+    #toggleButton i{
+        font-weight: 900;
+        font-size: 20px;
+        color:  #878838;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .mobile {
+        position: absolute;
+        top: 90px;
+        z-index: 4554;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .mobile a {
+        border-top: 2px solid #534f4f2a;
+        width: 100%;
+        padding: 0 10%;
+        padding-block: 20px;
+    }
+
+
+    .dropdown {
+        border-top: 2px solid #534f4f2a;
+        width: 100%;
+        padding-block: 20px;
+    }
+
+    .dropdown-content {
+        margin-left: 10%;
+    }
+
+    .dropdown-content a:hover{
+        color:  #878838;
+    }
+
+    .whatsapp_box a {
+        color: #fff;
+    }
+
+.footer_all{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.ft_logo img{
+    width: 100%;
+    text-align: center;
+}
+
+.links{
+    margin-top: 50px;
+}
+
+}
