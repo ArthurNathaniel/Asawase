@@ -2,20 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website of the Kumasi Catholic Archdiocese">
-    <meta name="keywords" content="Kumasi, Catholic, Archdiocese, Christianity, Ghana">
-    <meta name="author" content="Kumasi Catholic Archdiocese">
-    <meta property="og:title" content="Kumasi Catholic Archdiocese">
-    <meta property="og:description" content="Official website of the Kumasi Catholic Archdiocese">
-
+    <meta name="description" content="Welcome to the official website of Asawase St Theresa's Catholic Church. Join us for Mass, participate in community events, and grow spiritually with our parish in Asawase. We are committed to serving our community with faith, hope, and love.">
+    <meta name="keywords" content="Asawase, St Theresa's Catholic Church, Catholic Church, Mass schedule, community events, spiritual growth, parish activities, Asawase religious services, faith community, worship services, church events, church service times">
+    <meta name="author" content="Asawase St Theresa's Catholic Church">
+    <meta property="og:title" content="Asawase St Theresa's Catholic Church - Home">
+    <meta property="og:description" content="Join us at Asawase St Theresa's Catholic Church for Mass, community events, and spiritual growth. Serving the Asawase community with faith and love.">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Kumasi Catholic Archdiocese">
-    <meta name="twitter:description" content="Official website of the Kumasi Catholic Archdiocese">
-    <meta name="twitter:image" content="https://example.com/kumasi-catholic-archdiocese.jpg">
-    <title>St. Theresa Catholic Church</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Asawase St Theresa's Catholic Church - Home">
+    <meta name="twitter:description" content="Welcome to Asawase St Theresa's Catholic Church. Join us for Mass and community events in Asawase.">
+    <title>Asawase St Theresa's Catholic Church - Home</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -44,8 +42,7 @@
                     </div>
 
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
+              
                 <div class="swiper-pagination"></div>
             </div>
         </div>
@@ -155,7 +152,7 @@
     <section>
     <div class="blog_all">
         <div class="blog_title">
-            <h1>Blogs/ News</h1>
+            <h1>Events & Announcement</h1>
         </div>
         <div class="blog">
             <div class="swiper mySwiper3">

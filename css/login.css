@@ -1,0 +1,23 @@
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input{
+    height: 50px;
+    margin-bottom: 50px;
+}
+.forms button{
+    background-color: #CCCE85;
+    height: 50px;
+    border: none;
+    color: #fff;
+}
+
+.forms_details{
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}

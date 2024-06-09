@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-
 }
 
 body {
     font-family: "Poppins", sans-serif;
-
- overflow-x: hidden;
+    color: #1D292D;
+    overflow-x: hidden;
 }
 
 
@@ -18,14 +19,14 @@ body {
 .header_all {
     display: flex;
     justify-content: space-between;
-    background-color:  #878838;
+    background-color: #CCCE85;
     padding: 0 7%;
     padding-block: 5px;
     padding-top: 10px;
 }
 
 .motto span {
-    color:  #878838;
+    color: #CCCE85;
     padding-right: 15px;
     font-style: normal;
     text-transform: uppercase;
@@ -65,7 +66,7 @@ body {
 }
 
 .nav_links a:hover {
-    color:  #878838;
+    color: #CCCE85;
 }
 
 .mobile a {
@@ -79,7 +80,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:  #878838;
+    background-color: #CCCE85;
     min-width: 200px;
     z-index: 701;
 }
@@ -100,12 +101,13 @@ body {
 
 }
 
-.donate{
+.donate {
     display: flex;
     justify-content: flex-end;
 }
-.donate button{
-  padding: 15px 45px;
+
+.donate button {
+    padding: 15px 45px;
 }
 
 .social_media a {
@@ -113,36 +115,38 @@ body {
     height: 30px;
     width: 30px;
     font-size: 20px;
-    background-color:  #878838;
+    background-color: #CCCE85;
     color: #fff;
 }
 
 
-.whatsapp_box p span{
-   padding-left: 15px;
+.whatsapp_box p span {
+    padding-left: 15px;
 }
-.whatsapp_box p{
+
+.whatsapp_box p {
     z-index: 888;
-       padding: 10px 45px;
-     background-color:#fff;
-        right: 90px;
-        position: fixed;
-        bottom: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 45px;
+    background-color: #fff;
+    right: 90px;
+    position: fixed;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.mail{
-     z-index: 888;
+
+.mail {
+    z-index: 888;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     right: 30px;
     position: fixed;
     bottom: 20px;
-    background-color:  #878838;
+    background-color: #CCCE85;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +155,7 @@ body {
     border: 2px solid #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 .maill {
     z-index: 888;
     height: 50px;
@@ -159,7 +164,7 @@ body {
     right: 30px;
     position: fixed;
     bottom: 80px;
-    background-color:  #878838;
+    background-color: #CCCE85;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,16 +173,19 @@ body {
     border: 2px solid #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 .mail a {
     color: #fff;
 
 }
-.maill a{
+
+.maill a {
     color: #fff;
 }
+
 #toggleButton {
     display: none;
-    background-color:  #878838;
+    background-color: #CCCE85;
 }
 
 .mobile {
@@ -189,7 +197,7 @@ body {
 
 .about_bg {
     height: 300px;
-    background-color:  #878838;
+    background-color: #CCCE85;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,8 +213,9 @@ body {
     color: #fff;
     font-size: 50px;
 }
-.footer_all{
-    background-color:  #878838;
+
+.footer_all {
+    background-color: #1D292D;
     padding: 0 7%;
     padding-block: 50px;
     margin-top: 70px;
@@ -214,54 +223,62 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.links{
+.links {
     width: 95%;
 }
-.links h1{
+
+.links h1 {
     color: #fff;
     margin-bottom: 20px;
 }
-.links a{
+
+.links a {
     display: flex;
     flex-direction: column;
     padding-block: 10px;
     color: #fff;
     border-bottom: 2px solid;
 }
-.links h2{
+
+.links h2 {
     margin-top: 15px;
     color: #fff;
     text-transform: uppercase;
 }
- .social_mediaa  {
-     display: flex !important;
-     gap: 20px;
-     background-color: transparent;
-     margin-top: 20px;
- }
 
- .social_mediaa a{
+.social_mediaa {
+    display: flex !important;
+    gap: 20px;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.social_mediaa a {
     color: #fff;
     font-size: 25px;
- }
- .last{
+}
+
+.last {
     padding: 0 7%;
     padding-block: 20px;
     text-align: center;
- }
- .last a{
-    color:  #878838;
- }
- .all{
-    padding: 0 7%;
-margin-top: 50px;
 }
-.all h1{
+
+.last a {
+    color: #CCCE85;
+}
+
+.all {
+    padding: 0 7%;
+    margin-top: 50px;
+}
+
+.all h1 {
     margin-bottom: 15px;
     text-align: center;
 }
 
- .flex_all{
+.flex_all {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -269,7 +286,13 @@ margin-top: 50px;
 
 
 
-
+.all_bg {
+    height: 300px;
+    background-color: #CCCE85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -304,19 +327,19 @@ margin-top: 50px;
 
     #toggleButton {
         display: block;
-        background-color:  #878838;
+        background-color: #CCCE85;
         background-color: transparent;
         border: none;
         padding: 15px;
         color: #fff;
-      position: absolute;
-      right: 0;
+        position: absolute;
+        right: 0;
     }
 
-    #toggleButton i{
+    #toggleButton i {
         font-weight: 900;
         font-size: 20px;
-        color:  #878838;
+        color: #CCCE85;
     }
 
     .nav_links {
@@ -353,25 +376,26 @@ margin-top: 50px;
         margin-left: 10%;
     }
 
-    .dropdown-content a:hover{
-        color:  #878838;
+    .dropdown-content a:hover {
+        color: #CCCE85;
     }
 
     .whatsapp_box a {
         color: #fff;
     }
 
-.footer_all{
-    display: grid;
-    grid-template-columns: 1fr ;
-}
-.ft_logo img{
-    width: 100%;
-    text-align: center;
-}
+    .footer_all {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-.links{
-    margin-top: 50px;
-}
+    .ft_logo img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .links {
+        margin-top: 50px;
+    }
 
 }

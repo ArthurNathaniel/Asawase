@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .swiper-slide img {
@@ -66,13 +67,15 @@ width: 100%;
     margin-top: 50px;
 }
 .mass_text{
-    border: 2px dashed;
+    /* border: 2px dashed; */
     padding: 0 5%;
     padding-block: 30px;
     width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #CCCE85;
+    border-radius: 30px;
 }
 
 .mass_swiper{
@@ -90,6 +93,9 @@ width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+   
+
+
   }
 
   .mass_all img {
@@ -100,8 +106,10 @@ width: 100%;
   }
 
   .mass_card{
-    border: 2px dashed;
-    width: 100%;
+    border: 1px dashed #ddd;
+    width: 100% !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
   }
   .mass_img{
     height: 250px;
@@ -126,7 +134,7 @@ width: 100%;
 
 .quotation_all{
     margin-top: 50px;
-    background-color:  #878838;
+    background-color:  #CCCE85;
     padding-block: 50px;
     text-align: center;
 }
@@ -137,8 +145,8 @@ width: 100%;
 }
 
 .blog_card{
-    width: 300px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* width: 300px; */
+
 }
 
 .blog_img{
@@ -150,6 +158,7 @@ width: 100%;
     width: 100%;
     height: 300px;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .blog_info{
@@ -160,6 +169,10 @@ width: 100%;
 
 .mySwiper3 a{
     color: #000;
+    width: 100%;
+    border: 2px dashed #ddd;
+    border-radius: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .blog_title h1{
