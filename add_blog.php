@@ -5,7 +5,7 @@ include 'db.php';
 $imagePaths = [];
 
 // Check if there are already uploaded images for editing
-if(isset($_GET['id'])) {
+if (isset($_GET['id'])) {
     $blog_id = $_GET['id'];
 
     $sql = "SELECT images FROM blogs WHERE id = ?";
@@ -14,7 +14,7 @@ if(isset($_GET['id'])) {
     $stmt->execute();
     $result = $stmt->get_result();
 
-    if($result->num_rows == 1) {
+    if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
         $imagePaths = json_decode($row['images'], true);
     }
@@ -57,46 +57,52 @@ $conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Blog</title>
-    <style>
-        .image-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <?php include 'cdn.php'; ?>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
+
 <body>
-    <h1>Add New Blog</h1>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required><br><br>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required><br><br>
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="author" required><br><br>
-        <label for="images">Images:</label>
-        <input type="file" id="images" name="images[]" multiple required accept="image/*"><br><br>
-        <label for="content">Content:</label><br>
-        <textarea id="content" name="content" rows="5" required></textarea><br><br>
-        <input type="submit" value="Add Blog">
-    </form>
-    <!-- <h2>Uploaded Images:</h2>
-    <div class="image-container">
-        <?php
-        if (!empty($imagePaths)) {
-            foreach ($imagePaths as $imagePath) {
-                echo '<img src="' . $imagePath . '" alt="Uploaded Image">';
-            }
-        }
-        ?>
-    </div> -->
+    <?php include 'sidebar.php'; ?>
+
+    <div class="dashboard">
+        <div class="forms">
+            <h1>Add New Events / Announcement</h1>
+        </div>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+            <div class="forms">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="forms">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="forms">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="forms">
+                <label for="images">Images:</label>
+                <input type="file" id="images" name="images[]" multiple required accept="image/*">
+            </div>
+            <div class="forms">
+                <label for="content">Content:</label><br>
+                <textarea id="content" name="content" rows="5" required></textarea>
+            </div>
+            <!-- <input type="submit" value="Add Blog"> -->
+            <div class="forms">
+                <button type="submit">Add Blog</button>
+            </div>
+        </form>
+
+    </div>
 </body>
+
 </html>

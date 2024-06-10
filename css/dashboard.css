@@ -1,0 +1,70 @@
+.dashboard{
+    padding: 0 7%;
+    margin-block: 50px;
+}
+.swiper_dashboard{
+    border: 2px dashed #ddd;
+    margin-bottom: 30px;
+    padding: 0 5%;
+    padding-block: 40px;
+    border-radius: 30px;
+    background-image: url(../images/hero_three.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45vh;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+ 
+}
+.s_text{
+    background-color: #00000052;
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: #fff;
+    padding-left: 5%;
+}
+.s_text h1{
+    width: 100%;
+}
+.s_text P{
+    width: 100%;
+}
+
+.quote_title{
+    border: 2px dashed #ddd;
+    padding: 0 5%;
+    padding-block: 30px;
+border-radius: 30px;
+}
+
+.quote_title button{
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    background-color: #CCCE85;
+    border-radius: 10px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}

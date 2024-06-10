@@ -12,7 +12,7 @@ if(isset($_GET['delete_id'])) {
     $stmt->bind_param("i", $delete_id);
     if($stmt->execute()) {
         // Redirect to the same page after deletion
-        header("Location: view_blogs.php");
+        header("Location: delete_blog.php");
         exit();
     } else {
         echo "Error deleting blog post: " . $conn->error;
@@ -30,6 +30,14 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Blogs</title>
+    <?php include 'cdn.php'; ?>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
     <style>
         .blog-card {
             border: 1px solid #ccc;
@@ -51,9 +59,10 @@ $result = $conn->query($sql);
             cursor: pointer;
         }
     </style>
-</head>
-<body>
-    <h1>View Blogs</h1>
+
+<?php include 'sidebar.php'; ?>
+   <div class="dashboard">
+   <h1>View Blogs</h1>
     <?php
     // Check if there are any blog posts
     if ($result->num_rows > 0) {
@@ -76,5 +85,6 @@ $result = $conn->query($sql);
         echo '<p>No blog posts available</p>';
     }
     ?>
+   </div>
 </body>
 </html>

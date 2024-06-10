@@ -60,11 +60,13 @@ $conn->close();
 </head>
 
 <body>
+    <div class="login">
     <div class="forms_details">
         <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-            <div class="logo"></div>
-            <div class="title">
-                <h2>Olu's Kitchen - Login</h2>
+            <div class="logo forms"></div>
+            <div class="forms">
+                <h2>Welcome back - Login</h2>
+                <p>Asawase St Theresa's Catholic Church</p>
             </div>
             <div class="error_message">
                 <p>
@@ -73,19 +75,20 @@ $conn->close();
             </div>
             <div class="forms">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" placeholder="Enter your username" id="username" name="username" required>
             </div>
             <div class="forms">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" placeholder="Enter your password" id="password" name="password" required>
             </div>
             <div class="forms">
                 <button type="submit" class="btns">LOGIN</button>
             </div>
-            <div class="forms">
+            <!-- <div class="forms">
                 <p>Don't have an account? <a href="signup.php">Sign up</a></p>
-            </div>
+            </div> -->
         </form>
+    </div>
     </div>
 </body>
 

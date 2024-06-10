@@ -9,14 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("i", $quotation_id);
 
     if ($stmt->execute()) {
-        $message = "Quotation deleted successfully";
+        header("Location: view_quotations.php");
+        exit();
     } else {
-        $message = "Error: " . $stmt->error;
+        echo "Error: " . $stmt->error;
     }
 
     $stmt->close();
 }
-
-header("Location: quotation.php"); // Redirect back to the page after deletion
-exit();
 ?>

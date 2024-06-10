@@ -24,22 +24,27 @@
     <section>
         <div class="hero_all">
             <div class="swiper mySwiper">
-                <div class="hero_text">
+               
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                    <div class="hero_text">
                     <h1>Welcome to Asawase St Theresa's Catholic Church</h1>
                     <p>
                         Roman deɛ ɛnoaa ne Asawase, Wopɛ ade pa bra Asawase
                     </p>
                 </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./images/hero_three.jpg" alt="">
+                        <img src="./images/asawase.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/hero_two.jpg" alt="">
+                    <div class="hero_text">
+                   <h1>REP YOUR JERSEY SUNDAY</h1>
+                </div>
+                        <img src="./images/rep_your_jersey.png" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <img src="./images/hero_one.jpg" alt="">
-                    </div>
+                    </div> -->
 
                 </div>
               

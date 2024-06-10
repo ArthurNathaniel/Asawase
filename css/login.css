@@ -1,23 +1,63 @@
 .forms{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .forms input{
     height: 50px;
-    margin-bottom: 50px;
+    border-radius: 10px;
+    padding-left: 3%;
+   border: 2px solid #ddd;
+}
+.forms input:focus{
+    outline: none;
 }
 .forms button{
     background-color: #CCCE85;
     height: 50px;
     border: none;
     color: #fff;
+    border-radius: 10px;
 }
 
 .forms_details{
-    padding: 0 7%;
+    padding: 0 4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 80vh;
+    width: 30%;
+    background-color: #ffffffe2;
+    border-radius: 10px;
+   margin-left: 5%;
+  
+}
+
+.forms textarea{
+    height: 250px;
+    border-radius: 10px;
+    padding-left: 3%;
+   border: 2px solid #ddd;
+   padding-top: 30px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     height: 100vh;
+    background-image: url(../images/hero_one.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+@media only screen and (max-width: 1110px) {
+    .forms_details{
+        width: 87%;
+    }
 }
