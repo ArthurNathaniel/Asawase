@@ -181,3 +181,18 @@ width: 100%;
     text-transform: uppercase;
 }
 
+
+
+@media only screen and (max-width: 1110px) {
+.hero_text{
+    width: 100%;
+    padding: 0 2%;
+}
+.mass_all{
+    display: flex;
+    flex-direction: column;
+}
+.mass_card{
+    margin-top: 50px;
+}
+}  

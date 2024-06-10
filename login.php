@@ -66,7 +66,7 @@ $conn->close();
             <div class="logo forms"></div>
             <div class="forms">
                 <h2>Welcome back - Login</h2>
-                <p>Asawase St Theresa's Catholic Church</p>
+                <p>Asawase St Theresa Catholic Church</p>
             </div>
             <div class="error_message">
                 <p>

@@ -14,3 +14,19 @@
     object-fit: cover;
     border: 2px dashed #ddd;
 }
+
+@media only screen and (max-width: 1110px) {
+    .gallery_all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media only screen and (max-width: 710px) {
+    .gallery_all {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+}

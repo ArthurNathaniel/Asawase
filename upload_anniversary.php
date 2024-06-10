@@ -62,15 +62,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Image</title>
     <?php include 'cdn.php'; ?>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/photo.css">
 </head>
 <body>
-    <?php include 'navbar.php'; ?>
-    <div class="all_bg">
-        <h1>Upload Image</h1>
-    </div>
-    <section>
+    <?php include 'sidebar.php'; ?>
+    
+   <div class="dashboard">
+   <section>
         <div class="upload_form">
             <?php if ($uploadSuccessMessage): ?>
                 <p style="color: green;"><?php echo $uploadSuccessMessage; ?></p>
@@ -79,13 +80,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p style="color: red;"><?php echo $uploadErrorMessage; ?></p>
             <?php endif; ?>
             <form action="" method="post" enctype="multipart/form-data">
-                <label for="file">Choose image to upload:</label>
-                <input type="file" name="file" id="file" accept="image/*" required>
-                <button type="submit">Upload Image</button>
+                <div class="forms">
+                    <h1>Upload 75th Anniversary Images</h1>
+                    <p style="color: red; ">The images should be less 3MB</p>
+                </div>
+             <div class="forms">
+             <label for="file">Choose image to upload:</label>
+             <input type="file" name="file" id="file" accept="image/*" required>
+             </div>
+               <div class="forms">
+               <button type="submit">Upload Image</button>
+               </div>
             </form>
         </div>
     </section>
-    <?php include 'footer.php'; ?>
+   </div>
+  
 </body>
 </html>
 

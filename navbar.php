@@ -1,6 +1,6 @@
 <div class="header_all">
     <div class="motto">
-      <p>Roman deɛ ɛnoaa ne Asawase, Wopɛ ade pa bra Asawase</p>
+      <p>Roman deɛ ɛnoaa ne Asawase...</p>
     </div>
     <div class="social_media">
         <a href="#"><i class="fa-brands fa-facebook"></i></a>

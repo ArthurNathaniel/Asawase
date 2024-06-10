@@ -45,7 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssss", $title, $date, $author, $imageJSON, $content);
 
     if ($stmt->execute()) {
-        echo "New blog added successfully";
+     
+        echo "<script>alert('New Event or Announcement added successfully');</script>";
+
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

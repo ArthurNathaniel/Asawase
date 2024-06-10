@@ -19,6 +19,7 @@ body {
 .header_all {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #CCCE85;
     padding: 0 7%;
     padding-block: 5px;
@@ -237,7 +238,7 @@ body {
     flex-direction: column;
     padding-block: 10px;
     color: #fff;
-    border-bottom: 2px solid;
+    border-bottom: 2px dashed;
 }
 
 .links h2 {
@@ -305,7 +306,7 @@ body {
 
 
 
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1110px) {
     footer {
         display: flex;
         flex-direction: column;

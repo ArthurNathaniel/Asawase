@@ -7,9 +7,9 @@
             <h1>
                 USEFUL LINKS
             </h1>
-            <a href="">Home</a>
-            <a href="">Audio Mass</a>
-            <a href="">Welcome Message</a>
+            <a href="index.php">Home</a>
+            <a href="audio_mass.php">Audio Mass</a>
+            <a href="welcome_message.php">Welcome Message</a>
         </div>
         <div class="links">
             <h1>
@@ -28,7 +28,8 @@
     </script>
 Asawase St. Theresa Catholic Church
 </div>
-
+<script src='./js/swiper.js'></script>
+<script src='./js/navbar.js'></script>
 <style>
     .ft_logo {
         width: 250px;

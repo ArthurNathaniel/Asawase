@@ -15,8 +15,12 @@
        <a href="view_quotations.php">View Quotation</a>
        <a href="add_blog.php">Add Events</a>
        <a href="delete_blog.php">Delete Events</a>
-
-
+       <a href="add_audio_mass.php">Add Audio Mass</a>
+       <a href="delete_audio_mass.php">Delete Audio Mass</a>
+       <a href="upload_anniversary.php">Add Anniversary Images</a>
+       <a href="delete_anniversary.php">Delete Anniversary Images</a>
+       <a href="upload_gallery.php">Add Photo Gallery</a>
+       <a href="delete_photo.php">Delete Photo Gallery</a>
         <a href="logout.php">
             <h3> <i class="fas fa-sign-out-alt"></i> LOGOUT
             </h3>

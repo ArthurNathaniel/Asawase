@@ -30,8 +30,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete Images</title>
     <?php include 'cdn.php'; ?>
-    <link rel="stylesheet" href="./css/base.css">
+    <!-- <link rel="stylesheet" href="./css/base.css"> -->
     <link rel="stylesheet" href="./css/all.css">
+    <?php include 'cdn.php'; ?>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+
+    
+
     <style>
         .gallery_all {
             display: grid;
@@ -58,6 +67,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
             border: none;
             padding: 5px 10px;
             cursor: pointer;
+            width: 100px !important;
+        }
+
+        @media only screen and (max-width: 1110px) {
+            .gallery_all {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width: 710px) {
+            .gallery_all {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
         }
     </style>
     <script>
@@ -67,10 +90,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
     </script>
 </head>
 <body>
-    <?php include 'navbar.php'; ?>
-    <div class="all_bg">
-        <h1>Delete Images</h1>
-    </div>
+    <?php include 'sidebar.php'; ?>
+   
     <section>
         <div class="gallery_all">
             <?php
@@ -92,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
             ?>
         </div>
     </section>
-    <?php include 'footer.php'; ?>
+ 
 </body>
 </html>
 

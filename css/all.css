@@ -94,3 +94,47 @@
 .map iframe{
     width: 100%;
 }
+
+.info_flex{
+    display: none;
+}
+
+@media only screen and (max-width: 1110px) {
+    .priest_all {
+        display: flex;
+        flex-direction: column;
+    }
+    .priest_card{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .spc_all{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box_all{
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+    }
+
+}
+
+
+@media only screen and (max-width: 710px) {
+    .spc_all{
+        display: grid;
+        grid-template-columns: 1fr;
+    }   
+    .spc_card{
+        width: 100%;
+    } 
+    .box_all{
+        display: grid;
+        grid-template-columns: 1fr ;  
+    }
+
+    .box{
+        width: 100%;
+    }
+}

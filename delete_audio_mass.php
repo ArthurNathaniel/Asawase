@@ -29,13 +29,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete Audio Mass</title>
-    <link rel="stylesheet" href="./css/base.css">
+    <?php include 'cdn.php'; ?>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/photo.css">
 </head>
 <body>
+<?php include 'sidebar.php'; ?>
+<div class="gallery_all dashboard">
     <h1>Delete Audio Mass</h1>
+</div>
     <section>
-        <div class="gallery_all">
+        <div class="gallery_all dashboard">
             <?php
             $sql = "SELECT id, title, audio FROM audio_mass ORDER BY id DESC";
             $result = $conn->query($sql);
