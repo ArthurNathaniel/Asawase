@@ -1,0 +1,36 @@
+body {
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 40px ;
+ 
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+
+
+}
+
+
+th {
+  background-color: #1DB386;
+  color: #fff;
+
+  
+}
+
+.member {
+  padding: 0 5%;
+  padding-block: 50px;
+}
+
+.member table{
+  margin-top: 50px;
+}

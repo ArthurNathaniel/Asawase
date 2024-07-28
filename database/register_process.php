@@ -26,20 +26,18 @@ if ($result_check->num_rows > 0) {
     </script>";
 } else {
     // Prepare SQL statement for insertion
-    $sql = "INSERT INTO members (name, dob, gender, natal_day, telephone, email, nationality, marital_status, level_of_education, profession, confirmation, baptized, society, nlb_number, profile_picture, username, password)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO members (name, dob, gender, natal_day, telephone, nationality, marital_status, level_of_education, profession, confirmation, baptized, society, nlb_number, profile_picture)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     
     $stmt = $conn->prepare($sql);
-    $password_hashed = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $society = implode(',', $_POST['society']);
     
-    $stmt->bind_param("sssssssssssssssss",
+    $stmt->bind_param("ssssssssssssss",
         $_POST['name'],
         $_POST['dob'],
         $_POST['gender'],
         $_POST['natal_day'],
         $_POST['telephone'],
-        $_POST['email'],
         $_POST['nationality'],
         $_POST['marital_status'],
         $_POST['level_of_education'],
@@ -48,9 +46,7 @@ if ($result_check->num_rows > 0) {
         $_POST['baptized'],
         $society,
         $_POST['nlb_number'],
-        $profile_picture,
-        $_POST['username'],
-        $password_hashed
+        $profile_picture
     );
     
     if ($stmt->execute()) {

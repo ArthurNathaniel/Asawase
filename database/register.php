@@ -11,7 +11,11 @@
 </head>
 
 <body>
-
+<div class="all">
+        
+<div class="side">
+<?php include 'sidebar.php'; ?>
+</div>
 <div class="forms_all">
 <div class="forms">
 <h1>Member Registration</h1>
@@ -28,6 +32,7 @@
         <div class="forms">
             <label for="gender">Gender:</label>
             <select id="gender" name="gender" required>
+            <option value="" selected hidden>Select Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
             </select>
@@ -35,6 +40,7 @@
         <div class="forms">
             <label for="natal_day">Natal Day:</label>
             <select id="natal_day" name="natal_day" required>
+            <option value="" selected hidden>Select Natal Day</option>
                 <option value="Monday">Monday</option>
                 <option value="Tuesday">Tuesday</option>
                 <option value="Wednesday">Wednesday</option>
@@ -48,20 +54,18 @@
             <label for="telephone">Telephone:</label>
             <input type="text" id="telephone" name="telephone" required>
         </div>
-        <div class="forms">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+   
         <div class="forms">
             <label for="nationality">Nationality:</label>
             <select id="nationality" name="nationality" required>
-                <option value="">Select Country</option>
+            <option value="" selected hidden>Select Nationality</option>
                 <option value="Ghana">Ghana</option>
             </select>
         </div>
         <div class="forms">
             <label for="marital_status">Marital Status:</label>
             <select id="marital_status" name="marital_status" required>
+            <option value="" selected hidden>Select Marital Status</option>
                 <option value="Single">Single</option>
                 <option value="Married">Married</option>
                 <option value="Religious">Religious</option>
@@ -70,6 +74,7 @@
         <div class="forms">
             <label for="level_of_education">Level of Education:</label>
             <select id="level_of_education" name="level_of_education" required>
+            <option value="" selected hidden>Select Level of Education</option>
                 <option value="Primary">Primary</option>
                 <option value="Junior High">Junior High</option>
                 <option value="Senior High">Senior High</option>
@@ -79,6 +84,7 @@
         <div class="forms">
             <label for="profession">Profession:</label>
             <select id="profession" name="profession" required>
+            <option value="" selected hidden>Select Profession</option>
                 <option value="Worker">Worker</option>
                 <option value="Student">Student</option>
             </select>
@@ -86,6 +92,7 @@
         <div class="forms">
             <label for="confirmation">Confirmation:</label>
             <select id="confirmation" name="confirmation" required>
+            <option value="" selected hidden>Select Confirmation</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
@@ -93,13 +100,16 @@
         <div class="forms">
             <label for="baptized">Baptized:</label>
             <select id="baptized" name="baptized" required>
+            <option value="" selected hidden>Select Baptized</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
         </div>
         <div class="forms">
             <label for="society">Society:</label>
+           
             <select id="society" name="society[]" multiple required>
+          
                 <option value="Sacred Heart of Confraternity">Sacred Heart of Confraternity</option>
                 <option value="Youth Choir">Youth Choir</option>
                 <option value="Legion of Mary">Legion of Mary</option>
@@ -131,20 +141,13 @@
             <label for="profile_picture">Profile Picture:</label>
             <input type="file" id="profile_picture" name="profile_picture" accept="image/*">
         </div>
-        <div class="forms">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div class="forms">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+    
         <div class="forms">
             <button type="submit">Register</button>
         </div>
     </form>
 </div>
-
+</div>
        <!-- Include libraries -->
        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
@@ -202,6 +205,33 @@
 
         // Initialize Choice.js for natal day
         new Choices('#natal_day', {
+            searchEnabled: false,
+            itemSelectText: '',
+        });
+
+        new Choices('#marital_status', {
+            searchEnabled: false,
+            itemSelectText: '',
+        });
+
+        new Choices('#gender', {
+            searchEnabled: false,
+            itemSelectText: '',
+        });
+        new Choices('#level_of_education', {
+            searchEnabled: false,
+            itemSelectText: '',
+        });
+        
+        new Choices('#profession', {
+            searchEnabled: false,
+            itemSelectText: '',
+        });
+        new Choices('#confirmation', {
+            searchEnabled: false,
+            itemSelectText: '',
+        });
+        new Choices('#baptized', {
             searchEnabled: false,
             itemSelectText: '',
         });
