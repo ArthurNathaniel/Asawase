@@ -10,7 +10,7 @@
         <a href="view_members.php"><i class="fa-solid fa-users"></i>View Members</a>
     </div>
     <div class="logout">
-        <a href=""><i class="fa-solid fa-power-off"></i> Logout</a>
+        <a href="logout.php"><i class="fa-solid fa-power-off"></i> Logout</a>
     </div>
    
 </div>
